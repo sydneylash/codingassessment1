@@ -1,0 +1,51 @@
+body{
+  background-image: url("../images/back-ground.jpeg");
+}
+
+img{
+   display: grid;
+   width: 120px;
+   margin-bottom: 15px;
+   margin: auto;
+   /*Your code here*/
+}
+
+#mystuff{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+div{
+   padding: 30px;
+   margin:5px;
+   display: grid;
+   grid-template-rows: 30px repeat(5, auto) 100px;
+   justify-content: center;
+   /* YOUR CODE HERE */
+}
+
+h1{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 850px){
+  #mystuff{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  div{
+    padding: 30px;
+    margin:5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px repeat(5, auto) 100px;
+  }
+
+  div:nth-child(2n){
+    border: 2px solid black;
+
+  }
+
+}
